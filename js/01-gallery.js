@@ -54,5 +54,4 @@ container.addEventListener('click', event => {
     }
 };
   document.addEventListener('keydown', closeModal);
-  
 });
