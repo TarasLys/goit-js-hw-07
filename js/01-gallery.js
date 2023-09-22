@@ -53,5 +53,6 @@ container.addEventListener('click', event => {
         document.removeEventListener('keydown', closeModal);
     }
 };
-    // document.addEventListener('keydown', closeModal);
+  document.addEventListener('keydown', closeModal);
+  
 });
