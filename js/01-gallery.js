@@ -44,11 +44,11 @@ container.addEventListener('click', event => {
 
 
   const instance = basicLightbox.create(`<div><img src="${largeImageURL}" alt="" width = "900" /></div>`
-    , {
-      onClose: (instance) => {
+    // , {
+    //   onClose: (instance) => {
         
-        document.removeEventListener('keydown', closeModal);}
-    }
+    //     document.removeEventListener('keydown', closeModal);}
+    // }
   )
     instance.show();
 
