@@ -43,7 +43,13 @@ container.addEventListener('click', event => {
     const largeImageURL = event.target.dataset.source;
 
 
-const instance = basicLightbox.create(`<div><img src="${largeImageURL}" alt="" width = "900" /></div>`)
+  const instance = basicLightbox.create(`<div><img src="${largeImageURL}" alt="" width = "900" /></div>`
+    , {
+      onClose: (instance) => {
+        
+        document.removeEventListener('keydown', closeModal);}
+    }
+  )
     instance.show();
 
 
@@ -55,5 +61,11 @@ const instance = basicLightbox.create(`<div><img src="${largeImageURL}" alt="" w
     }
 };
     document.addEventListener('keydown', closeModal);
+
+
 });
+
+
+
+
 
