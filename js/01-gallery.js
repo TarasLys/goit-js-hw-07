@@ -52,19 +52,11 @@ container.addEventListener('click', event => {
   )
     instance.show();
 
-
-
-    const closeModal = function (event) {
+  const closeModal = function (event) {
     if (event.key === 'Escape') {
         instance.close();
         document.removeEventListener('keydown', closeModal);
     }
 };
-  document.addEventListener('keydown', closeModal);
-  
+    document.addEventListener('keydown', closeModal);
 });
-
-
-
-
-
